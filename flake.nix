@@ -48,10 +48,7 @@
         };
       };
 
-      packages = {
-        default = packages.pandoc-lua-filters;
-        pandoc-lua-filters = pkgs.callPackage ./default.nix {};
-      };
+      packages.default = pkgs.callPackage ./default.nix {};
 
       devShells.default = pkgs.mkShell {
         nativeBuildInputs = with pkgs; [

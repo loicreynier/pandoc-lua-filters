@@ -16,7 +16,7 @@ stdenv.mkDerivation rec {
 
   meta = with lib; {
     homepage = "https://github.com/loicreynier/pandoc-lua-filters";
-    description = "Personnal collection of Lua filters";
+    description = "Personnal collection of Pandoc Lua filters";
     license = licenses.unlicense;
     maintainers = with maintainers; [loicreynier];
   };
